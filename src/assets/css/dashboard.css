@@ -1,0 +1,442 @@
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fc;
+    color:#1e293b;
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:260px;
+    height:100vh;
+    background:#1e293b;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    transition:.3s;
+    box-shadow:4px 0 15px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    padding:25px;
+    background:#2563eb;
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.logo i{
+    font-size:30px;
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.sidebar ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+.sidebar ul li{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px 30px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+    font-weight:500;
+}
+
+.sidebar ul li:hover{
+    background:#334155;
+    border-left:5px solid #2563eb;
+}
+
+.sidebar ul li.active{
+    background:#2563eb;
+    border-left:5px solid #60a5fa;
+}
+
+.sidebar ul li i{
+    width:22px;
+    text-align:center;
+    font-size:18px;
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:30px;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    background:#fff;
+    border-radius:15px;
+    padding:18px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   SEARCH BOX
+=========================== */
+
+.search-box{
+    width:350px;
+    display:flex;
+    align-items:center;
+    background:#f1f5f9;
+    border-radius:30px;
+    padding:10px 20px;
+}
+
+.search-box i{
+    color:#64748b;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    background:transparent;
+    margin-left:12px;
+    width:100%;
+    font-size:15px;
+}
+
+
+/* ===========================
+   NAVBAR RIGHT
+=========================== */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+/* ===========================
+   NOTIFICATION
+=========================== */
+
+.notification{
+    position:relative;
+    cursor:pointer;
+}
+
+.notification i{
+    font-size:22px;
+    color:#334155;
+}
+
+.badge{
+    position:absolute;
+    top:-8px;
+    right:-8px;
+    background:#ef4444;
+    color:#fff;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+    font-weight:600;
+}
+
+/* ===========================
+   PROFILE
+=========================== */
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+}
+
+.profile img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:2px solid #2563eb;
+}
+
+.profile h4{
+    font-size:15px;
+    color:#1e293b;
+}
+
+.profile small{
+    color:#64748b;
+}
+
+/* ===========================
+   DASHBOARD CARDS
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:all .3s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:32px;
+    color:#2563eb;
+    margin-bottom:18px;
+}
+
+.card h2{
+    font-size:34px;
+    color:#1e293b;
+}
+
+.card p{
+    margin-top:8px;
+    color:#64748b;
+}
+
+/* Decorative top border */
+
+.card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:5px;
+    background:#2563eb;
+}
+
+
+
+/* ===========================
+   TABLE SECTION
+=========================== */
+
+.table-section{
+    margin-top:35px;
+    background:#ffffff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   TABLE HEADER
+=========================== */
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.table-header h2{
+    font-size:24px;
+    color:#1e293b;
+    font-weight:600;
+}
+
+/* ===========================
+   ADD BUTTON
+=========================== */
+
+.table-header button{
+    background:#2563eb;
+    color:#ffffff;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.table-header button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#2563eb;
+    color:#ffffff;
+}
+
+thead th{
+    padding:16px;
+    text-align:left;
+    font-size:15px;
+}
+
+tbody td{
+    padding:16px;
+    border-bottom:1px solid #e2e8f0;
+    color:#475569;
+}
+
+tbody tr{
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* ===========================
+   STATUS BADGES
+=========================== */
+
+.active{
+    background:#22c55e;
+    color:#ffffff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:500;
+}
+
+.leave{
+    background:#f59e0b;
+    color:#ffffff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:500;
+}
+
+.inactive{
+    background:#ef4444;
+    color:#ffffff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:500;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .sidebar{
+        width:80px;
+    }
+
+    .sidebar span{
+        display:none;
+    }
+
+    .logo span{
+        display:none;
+    }
+
+    .logo{
+        justify-content:center;
+    }
+
+    .main-content{
+        margin-left:80px;
+        width:calc(100% - 80px);
+    }
+
+    .search-box{
+        width:220px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+        align-items:flex-start;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+    .table-section{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:750px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+}

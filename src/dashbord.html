@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-building"></i>
+            <span>EMS</span>
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-users"></i>
+                <span>Employees</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-building-user"></i>
+                <span>Departments</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Attendance</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <span>Payroll</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gears"></i>
+                <span>Settings</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Navbar -->
+        <header class="navbar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-search"></i>
+
+                <input type="text" placeholder="Search employees...">
+
+            </div>
+
+            <div class="nav-right">
+
+                <div class="notification">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span class="badge">5</span>
+
+                </div>
+
+                <div class="profile">
+
+                    <img src="https://i.pravatar.cc/45" alt="Profile">
+
+                    <div>
+
+                        <h4>Admin</h4>
+
+                        <small>HR Manager</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <h2>245</h2>
+                <p>Total Employees</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-building-user"></i>
+                <h2>10</h2>
+                <p>Departments</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user-check"></i>
+                <h2>228</h2>
+                <p>Present Today</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-calendar-xmark"></i>
+                <h2>17</h2>
+                <p>On Leave</p>
+            </div>
+
+        </section>
+
+        <!-- Recent Employees -->
+        <section class="table-section">
+
+            <div class="table-header">
+
+                <h2>Recent Employees</h2>
+
+                <button>Add Employee</button>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>EMP001</td>
+                        <td>John Smith</td>
+                        <td>IT</td>
+                        <td>john@example.com</td>
+                        <td><span class="active">Active</span></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>EMP002</td>
+                        <td>Sarah Khan</td>
+                        <td>HR</td>
+                        <td>sarah@example.com</td>
+                        <td><span class="leave">Leave</span></td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

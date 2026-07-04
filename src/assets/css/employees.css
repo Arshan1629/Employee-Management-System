@@ -1,0 +1,441 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+
+.wrapper{
+    display:flex;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#1e293b;
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    overflow:auto;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:25px;
+    background:#2563eb;
+}
+
+.logo i{
+    font-size:30px;
+}
+
+.logo h2{
+    margin:0;
+    font-weight:600;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:20px 0;
+}
+
+.sidebar ul li{
+    margin:5px 0;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    transition:.3s;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover{
+    background:#2563eb;
+}
+
+.sidebar ul li.logout{
+    margin-top:60px;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:30px;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.topbar h2{
+    margin-bottom:5px;
+}
+
+.topbar p{
+    color:#64748b;
+}
+
+.top-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.search-box{
+    width:280px;
+}
+
+
+
+/* =========================
+   STATISTICS CARDS
+========================= */
+
+.stat-card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    text-align:center;
+    cursor:pointer;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+}
+
+.stat-card i{
+    font-size:35px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.stat-card h3{
+    font-size:32px;
+    font-weight:700;
+    color:#1e293b;
+}
+
+.stat-card p{
+    color:#64748b;
+    margin-top:8px;
+    margin-bottom:0;
+}
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.table-card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.table-header h3{
+    margin:0;
+    color:#1e293b;
+    font-weight:600;
+}
+
+.table-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.table-actions select{
+    width:220px;
+}
+
+/* =========================
+   EMPLOYEE IMAGE
+========================= */
+
+.emp-img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #2563eb;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:#2563eb;
+    color:#ffffff;
+}
+
+.table thead th{
+    border:none;
+    padding:16px;
+    font-weight:600;
+    vertical-align:middle;
+}
+
+.table tbody td{
+    padding:16px;
+    vertical-align:middle;
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.btn-sm{
+    width:36px;
+    height:36px;
+    border-radius:8px;
+    margin-right:5px;
+}
+
+.btn-primary{
+    background:#2563eb;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-warning{
+    color:#fff;
+}
+
+.btn-danger{
+    background:#dc3545;
+}
+
+.btn-info{
+    color:#fff;
+}
+
+
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:25px;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.showing{
+    color:#64748b;
+    font-size:14px;
+}
+
+.pagination{
+    margin:0;
+}
+
+.page-link{
+    color:#2563eb;
+    border-radius:8px !important;
+    margin:0 3px;
+    border:1px solid #dee2e6;
+}
+
+.page-item.active .page-link{
+    background:#2563eb;
+    border-color:#2563eb;
+    color:#fff;
+}
+
+.page-link:hover{
+    background:#e9f2ff;
+    color:#2563eb;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badge{
+    padding:8px 14px;
+    font-size:12px;
+    font-weight:500;
+    border-radius:20px;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:8px;
+    height:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e5e7eb;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:992px){
+
+    .sidebar{
+        width:80px;
+    }
+
+    .sidebar .logo h2,
+    .sidebar ul li a{
+        font-size:0;
+    }
+
+    .sidebar ul li a i{
+        font-size:18px;
+        margin:auto;
+    }
+
+    .logo{
+        justify-content:center;
+    }
+
+    .logo i{
+        margin:0;
+    }
+
+    .main-content{
+        margin-left:80px;
+        width:calc(100% - 80px);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .topbar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .top-right{
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+    .table-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .table-actions{
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .table-actions select,
+    .table-actions button{
+        width:100%;
+    }
+
+    .pagination-container{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .table-responsive{
+        overflow-x:auto;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .stat-card{
+        margin-bottom:20px;
+    }
+
+    .main-content{
+        padding:15px;
+    }
+
+}

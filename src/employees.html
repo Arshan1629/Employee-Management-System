@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management | EMS</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/employees.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-building"></i>
+
+            <h2>EMS</h2>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    Employees
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-building-user"></i>
+                    Departments
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Payroll
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file"></i>
+                    Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li class="logout">
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Navbar -->
+
+        <div class="topbar">
+
+            <div>
+
+                <h2>Employee Management</h2>
+
+                <p>Manage all employees</p>
+
+            </div>
+
+            <div class="top-right">
+
+                <input type="text"
+                    class="form-control search-box"
+                    placeholder="Search employee...">
+
+                <button class="btn btn-primary">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Employee
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="row mt-4">
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h3>245</h3>
+
+                    <p>Total Employees</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-user-check"></i>
+
+                    <h3>228</h3>
+
+                    <p>Active Employees</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-user-clock"></i>
+
+                    <h3>12</h3>
+
+                    <p>On Leave</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-building-user"></i>
+
+                    <h3>8</h3>
+
+                    <p>Departments</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Employee Table -->
+
+        <div class="table-card mt-4">
+
+            <div class="table-header">
+
+                <h3>Employee List</h3>
+
+                <div class="table-actions">
+
+                    <select class="form-select">
+
+                        <option>All Departments</option>
+
+                        <option>IT</option>
+
+                        <option>HR</option>
+
+                        <option>Finance</option>
+
+                        <option>Sales</option>
+
+                    </select>
+
+                    <button class="btn btn-success">
+
+                        <i class="fa-solid fa-file-export"></i>
+
+                        Export
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="table align-middle table-hover">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Photo</th>
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+
+                            <th>Department</th>
+
+                            <th>Position</th>
+
+                            <th>Status</th>
+
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                            <!-- PART 2 -->
+<tr>
+
+    <td>EMP001</td>
+
+    <td>
+        <img src="https://i.pravatar.cc/45?img=11" class="emp-img">
+    </td>
+
+    <td>John Smith</td>
+
+    <td>john.smith@company.com</td>
+
+    <td>IT</td>
+
+    <td>Java Developer</td>
+
+    <td>
+        <span class="badge bg-success">Active</span>
+    </td>
+
+    <td>
+
+        <button class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-eye"></i>
+        </button>
+
+        <button class="btn btn-sm btn-warning">
+            <i class="fa-solid fa-pen"></i>
+        </button>
+
+        <button class="btn btn-sm btn-danger">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+
+    </td>
+
+</tr>
+
+<tr>
+
+    <td>EMP002</td>
+
+    <td>
+        <img src="https://i.pravatar.cc/45?img=12" class="emp-img">
+    </td>
+
+    <td>Sarah Khan</td>
+
+    <td>sarah.khan@company.com</td>
+
+    <td>HR</td>
+
+    <td>HR Manager</td>
+
+    <td>
+        <span class="badge bg-warning text-dark">On Leave</span>
+    </td>
+
+    <td>
+
+        <button class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-eye"></i>
+        </button>
+
+        <button class="btn btn-sm btn-warning">
+            <i class="fa-solid fa-pen"></i>
+        </button>
+
+        <button class="btn btn-sm btn-danger">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+
+    </td>
+
+</tr>
+
+<tr>
+
+    <td>EMP003</td>
+
+    <td>
+        <img src="https://i.pravatar.cc/45?img=13" class="emp-img">
+    </td>
+
+    <td>Michael Lee</td>
+
+    <td>michael.lee@company.com</td>
+
+    <td>Finance</td>
+
+    <td>Accountant</td>
+
+    <td>
+        <span class="badge bg-success">Active</span>
+    </td>
+
+    <td>
+
+        <button class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-eye"></i>
+        </button>
+
+        <button class="btn btn-sm btn-warning">
+            <i class="fa-solid fa-pen"></i>
+        </button>
+
+        <button class="btn btn-sm btn-danger">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+
+    </td>
+
+</tr>
+
+<tr>
+
+    <td>EMP004</td>
+
+    <td>
+        <img src="https://i.pravatar.cc/45?img=14" class="emp-img">
+    </td>
+
+    <td>Emily Davis</td>
+
+    <td>emily.davis@company.com</td>
+
+    <td>Sales</td>
+
+    <td>Sales Executive</td>
+
+    <td>
+        <span class="badge bg-danger">Inactive</span>
+    </td>
+
+    <td>
+
+        <button class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-eye"></i>
+        </button>
+
+        <button class="btn btn-sm btn-warning">
+            <i class="fa-solid fa-pen"></i>
+        </button>
+
+        <button class="btn btn-sm btn-danger">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+
+    </td>
+
+</tr>
+
+<tr>
+
+    <td>EMP005</td>
+
+    <td>
+        <img src="https://i.pravatar.cc/45?img=15" class="emp-img">
+    </td>
+
+    <td>David Wilson</td>
+
+    <td>david.wilson@company.com</td>
+
+    <td>Marketing</td>
+
+    <td>Marketing Lead</td>
+
+    <td>
+        <span class="badge bg-success">Active</span>
+    </td>
+
+    <td>
+
+        <button class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-eye"></i>
+        </button>
+
+        <button class="btn btn-sm btn-warning">
+            <i class="fa-solid fa-pen"></i>
+        </button>
+
+        <button class="btn btn-sm btn-danger">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+
+    </td>
+
+</tr>
+
+
+                                <!-- PART 3 -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- Pagination -->
+
+            <div class="pagination-container">
+
+                <div class="showing">
+
+                    Showing 1 to 5 of 245 entries
+
+                </div>
+
+                <nav>
+
+                    <ul class="pagination">
+
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">Previous</a>
+                        </li>
+
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">4</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">5</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Employee JS -->
+
+<script src="assets/js/employee.js"></script>
+
+</body>
+
+</html>
