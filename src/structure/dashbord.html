@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        <h2>EMS</h2>
+    </div>
+
+    <ul>
+
+        <li class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+        <li>
+            <i class="fa-solid fa-users"></i>
+            Employees
+        </li>
+
+        <li>
+            <i class="fa-solid fa-building"></i>
+            Departments
+        </li>
+
+        <li>
+            <i class="fa-solid fa-calendar-check"></i>
+            Attendance
+        </li>
+
+        <li>
+            <i class="fa-solid fa-money-bill"></i>
+            Payroll
+        </li>
+
+        <li>
+            <i class="fa-solid fa-gear"></i>
+            Settings
+        </li>
+
+        <li>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <div class="topbar">
+
+        <h2>Dashboard</h2>
+
+        <div class="profile">
+
+            <img src="https://i.pravatar.cc/45" alt="">
+
+            <span>Admin</span>
+
+        </div>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Employees</h3>
+            <h1>248</h1>
+        </div>
+
+        <div class="card">
+            <h3>Departments</h3>
+            <h1>12</h1>
+        </div>
+
+        <div class="card">
+            <h3>Attendance</h3>
+            <h1>92%</h1>
+        </div>
+
+        <div class="card">
+            <h3>Pending Leaves</h3>
+            <h1>18</h1>
+        </div>
+
+    </div>
+
+    <div class="table-container">
+
+        <h2>Recent Employees</h2>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>John Smith</td>
+                <td>IT</td>
+                <td><span class="active-status">Active</span></td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Sarah Khan</td>
+                <td>HR</td>
+                <td><span class="active-status">Active</span></td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Michael Lee</td>
+                <td>Finance</td>
+                <td><span class="leave-status">Leave</span></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
